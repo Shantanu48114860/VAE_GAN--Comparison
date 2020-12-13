@@ -1,0 +1,23 @@
+/home/shantanughosh/GAN
+c37a-s32.ufhpc
+Wed Nov  4 20:12:27 EST 2020
+GAN
+Traceback (most recent call last):
+  File "GAN_Manager.py", line 11, in <module>
+    from GAN import Generator, Discriminator
+  File "/home/shantanughosh/GAN/GAN.py", line 123, in <module>
+    fake = netG(noise)
+  File "/apps/python/3.7/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/shantanughosh/GAN/GAN.py", line 57, in forward
+    return self.main(input)
+  File "/apps/python/3.7/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/apps/python/3.7/lib/python3.7/site-packages/torch/nn/modules/container.py", line 100, in forward
+    input = module(input)
+  File "/apps/python/3.7/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/apps/python/3.7/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 778, in forward
+    output_padding, self.groups, self.dilation)
+RuntimeError: Input type (torch.cuda.FloatTensor) and weight type (torch.FloatTensor) should be the same
+Wed Nov  4 20:12:34 EST 2020

@@ -42,7 +42,7 @@ class Gan_Manager:
         G_losses = []
         D_losses = []
         iters = 0
-        num_epochs = 50
+        num_epochs =150
 
         print("Starting Training Loop...")
         # For each epoch

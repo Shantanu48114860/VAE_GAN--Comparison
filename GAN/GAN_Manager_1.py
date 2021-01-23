@@ -84,7 +84,7 @@ class Gan_Manager:
                     ###########################
                     # Calculate G's loss based on this output
                     output_fake = netD(fake).view(-1)
-                    errG = torch.log(1 - output_fake)
+                    errG = torch.mean(torch.log(1 - output_fake))
                     # Calculate gradients for G
                     errG.backward()
                     # Update G
